@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Message Creator</title>
+  </head>
+  <body>
+    <form action="" onsubmit="validateEmail(event)">
+      <h1>Happy Birthday Message Creator</h1>
+      <div>
+        <label for="message">Message?</label
+        ><input type="text" id="message" name="message" />
+      </div>
+      <div>
+        <label for="email">Email address?</label
+        ><input type="text" id="email" name="email" placeholder="name@email.com"/>
+      </div>
+      <div>
+        <label for="date">Date to send?</label
+        ><input type="date" id="date" name="date" />
+      </div>
+      <div>
+        <label for="color">Message color?</label
+        ><input type="color" id="color" name="color" />
+      </div>
+      <div>
+        <label for="numberOflinks">Number of links?</label
+        ><input
+          type="number"
+          id="numberOflinks"
+          name="numberOflinks"
+          min="0"
+          max="10"
+          value="0"
+        />
+      </div>
+      <div>
+        <label for="volume">Music volume?</label
+        ><input
+          type="range"
+          id="volume"
+          name="volume"
+          value="20"
+          min="0"
+          max="50"
+        />
+      </div>
+      <div>
+        <input
+          type="submit"
+          value="Send Birthday Message"
+        />
+      </div>
+    </form>
+
+    <style>
+      form {
+        width: 60%;
+      }
+
+      form div {
+        display: flex;
+        margin: 10px;
+      }
+
+      form div label {
+        width: 30%;
+      }
+    </style>
+
+    <script>
+      function validateEmail(event){
+
+        let emailField = document.querySelector("#email");
+
+        console.log(emailField);
+        if(emailField.value.match(/[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*/))
+        {
+            alert("Valid email");
+        }
+        else
+        {
+            event.preventDefault();
+            alert("Invalid email");
+        }
+      };
+    </script>
+
+  </body>
+</html>
