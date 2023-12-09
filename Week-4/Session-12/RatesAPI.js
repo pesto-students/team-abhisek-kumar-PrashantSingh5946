@@ -1,4 +1,4 @@
-API_KEY = "20e51c514e7d2302d08c595fc2d30833";
+API_KEY = "";
 
 async function getExchangeRate(currencyCode) {
   try {
