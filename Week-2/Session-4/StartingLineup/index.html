@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starting Lineup</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Starting Lineup</h1>
+
+      <fieldset>
+        <legend>Status:</legend>
+        <p>
+          <label for="draft">Draft</label>
+          <input name="status" id="draft" value="Draft" type="radio" />
+
+          <label for="final">Final</label>
+          <input name="status" id="final" value="Final" type="radio" checked />
+        </p>
+      </fieldset>
+
+      <p>
+        <label for="gameDate">Date:</label>
+        <select name="gameDate" id="gameDate">
+          <option value="March 20">March 20</option>
+          <option value="March 24">March 24</option>
+          <option value="April 2">April 2</option>
+          <option value="April 6">April 6</option>
+          <option value="April 14">April 14</option>
+        </select>
+      </p>
+
+      <fieldset>
+        <legend>Players:</legend>
+        <p>
+          <label for="player1">Aarav Agarwal</label>
+          <input
+            name="player"
+            type="checkbox"
+            id="player1"
+            value="Aarav Agarwal"
+          />
+        </p>
+        <p>
+          <label for="player2">Ava Johnson</label>
+          <input
+            name="player"
+            type="checkbox"
+            id="player2"
+            value="Ava Johnson"
+          />
+        </p>
+
+        <p>
+          <label for="player3">Julio Artiz</label>
+          <input
+            name="player"
+            type="checkbox"
+            id="player3"
+            value="Julio Artiz"
+          />
+        </p>
+
+        <p>
+          <label for="player4">Liam Rubio</label>
+          <input
+            name="player"
+            type="checkbox"
+            id="player4"
+            value="Julio Artiz"
+          />
+        </p>
+
+        <p>
+          <label for="player5">Emma Witherspoon</label>
+          <input
+            name="player"
+            type="checkbox"
+            id="player5"
+            value="Emma Witherspoon"
+          />
+        </p>
+      </fieldset>
+
+      <p><input type="submit" value="Submit" /></p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+li {
+  margin: 5px;
+}
+
+body {
+  overflow: scroll;
+}
